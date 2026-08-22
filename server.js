@@ -20,7 +20,7 @@ async function callGroq(messages) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      model: 'openai/gpt-oss-120b',
+      model: 'llama-3.3-70b-versatile',
       messages,
       temperature: 0.7,
       max_tokens: 2048
