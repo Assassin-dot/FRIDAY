@@ -27,7 +27,7 @@ async function callGroq(messages) {
     })
   });
   const data = await response.json();
-  return data.choices[0].message.content;
+  if (!data.choices) throw new Error(JSON.stringify(data));
 }
 
 async function generateTitle(firstMessage) {
