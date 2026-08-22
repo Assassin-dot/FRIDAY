@@ -1,0 +1,15 @@
+{
+  "name": "friday-agent",
+  "version": "1.0.0",
+  "description": "Friday - Personal AI Agent",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0"
+  },
+  "license": "ISC"
+}
