@@ -104,7 +104,7 @@ app.post('/chat', async (req, res) => {
     res.json({ reply, title: chat.title });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: err.message });
+    console.error('Full error:', err);
   }
 });
 
